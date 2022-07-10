@@ -1,0 +1,200 @@
+body {
+  margin: 10px auto;
+  min-width: 250px;
+  max-width: 50%;
+  background-color: rgb(222, 240, 243);
+  background-image: url('todo.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position: right;
+  background-size:cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set zebra-stripes: all odd list items to a different color */
+ul li:nth-child(odd) {
+background:transparent;
+}
+ul li:hover {
+  background: #ddd;
+}
+ul li.checked {
+  background:transparent;
+  color: rgb(33, 32, 32);
+  text-decoration: line-through;
+  width:100%;
+  height:100%;
+	
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 5px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color:transparent;
+  font-weight: bold;
+  size: 100%;
+  padding: 10px 15px 15px 10px;
+}
+
+.close:hover {
+  background-color:red;
+  color: white;
+}
+.header {
+  background-color:transparent;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 { color: #111;
+  font-family: 'Poppins', sans-serif; 
+ font-size: 30px; 
+ font-weight: 300; 
+ line-height: 32px;
+  margin: 0 0 20px;
+  text-align: center; 
+ }
+
+ 
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+
+
+#addBtn:hover {
+  background-color: rgb(198, 65, 239);
+}
+
+
+#clear-list{
+  position: relative;
+    float: center;
+    width: 15%;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #2a8c84;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+#myInput{
+  width: 70%;
+    width: 70%;
+    height: 45px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #2a8c84;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: center;
+    border-radius: 5px;
+}
+
+#mydes{
+  width: 70%;
+    width: 70%;
+    height: 45px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #2a8c84;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: center;
+    border-radius: 5px;
+}
+
+#mydead{
+  width: 70%;
+    width: 70%;
+    height: 45px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #2a8c84;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: center;
+    border-radius: 5px;
+}
+
+
+#addBtn{
+  position: relative;
+  float: center;
+  width: 10%;
+  height: 45px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #2a8c84;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+
+#clear-list:hover{
+  background-color: rgb(198, 65, 239);
+  color: white;
+}

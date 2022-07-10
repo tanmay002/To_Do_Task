@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body >
+    <div class="header">
+      <h2 style="margin:5px">To Do List</h2>
+      <br>
+
+      <input type="text" id="myInput" placeholder="Enter Task..">
+      <input type="text" id="mydes" placeholder="Description">
+      <input type="date" id="mydead" placeholder="Deadline">
+
+      <br>
+      
+    </div>
+
+      <center>
+      <button type="button" id="addBtn" onclick="newElement()" >Add</button>
+      </center>
+
+    <ul id="myUL">
+    <li class="checked"></li>
+    </ul>
+    <button type="button" id="clear-list" onclick="removeAll()">Clear List</button>
+
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
+</html>
